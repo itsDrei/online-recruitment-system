@@ -1,0 +1,53 @@
+label{
+    font-family: 'Roboto', sans-serif;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select.form-control
+{
+    border-radius: 20px;
+}
+legend{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    
+}
+.comDetails, header{
+    display: flex;
+    align-items: center;
+    
+}
+.logo{
+    width: 90px;
+}
+header{
+    border-bottom: solid 1px;
+    max-width: 90%;
+    margin: 0 auto;
+    margin-bottom: 5%;
+    display: flex;
+    padding-bottom: 1%;
+}
+.compName{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin: 0;
+    font-size: 20px;
+}
+
+
+
+@media (max-width: 480px) {
+    .modal-body .form-control p {
+      font-size: 11px;
+    }
+  }
+  
+@media (min-width: 1024px) {
+    .modal-body .form-control p {
+      font-size: 13px;
+    }
+  }
+  

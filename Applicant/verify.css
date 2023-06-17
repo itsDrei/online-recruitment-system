@@ -1,0 +1,30 @@
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.title{
+    margin-bottom: 10%;
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+form{
+    padding:20%;
+/* From https://css.glass */
+    background: rgba(223, 223, 223, 0.08);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.6px);
+    -webkit-backdrop-filter: blur(3.6px);
+    border: 1px solid rgba(223, 223, 223, 0.71);
+}
+.logo{
+    width: 60px;
+    position: absolute;
+    top: 11%;
+    left: 45%;
+}

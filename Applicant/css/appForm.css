@@ -1,0 +1,173 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  3. Allow percentage-based heights in the application
+*/
+html,
+body {
+  height: 100%;
+}
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  6. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  7. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+  8. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+  9. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+/* header section */
+
+header {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  width: 90px;
+}
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -13%);
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+
+  background-color: rgba(255, 255, 255, 0.55);
+}
+/* Style the input fields */
+
+.form-container {
+  margin-bottom: 20px;
+}
+/* Style starts here */
+/* header */
+.comDetails {
+  display: flex;
+  flex-direction: column;
+}
+.compName {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+.compAdd {
+  font-family: "Roboto", sans-serif;
+}
+.title {
+  margin-top: 2%;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+.titleTagline {
+  font-size: 14px;
+  opacity: 80%;
+  margin-bottom: 2%;
+}
+/* end of header */
+/* form starts here */
+legend {
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+/* Personal Information style */
+label {
+  font-family: "Roboto", sans-serif;
+}
+/* mobile view */
+@media only screen and (max-width: 767px) {
+  body {
+    background: rgb(255, 0, 11);
+    background: linear-gradient(
+      177deg,
+      rgba(255, 0, 11, 1) 18%,
+      rgba(252, 156, 0, 1) 64%
+    );
+    height: 100vh;
+  }
+  .container {
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -13%);
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: rgba(255, 255, 255, 0.55);
+  }
+  header {
+    display: flex;
+    align-items: center;
+  }
+  .compName {
+    font-size: 10px;
+  }
+  .comAdd {
+    font-size: 8px;
+  }
+  .logo {
+    width: 100px;
+  }
+  /* birthday  */
+  .birth {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
